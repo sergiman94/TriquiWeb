@@ -1,0 +1,198 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: blueviolet;
+}
+
+.container-main {
+  margin: 0px auto 0px auto;
+  height: 550px;
+  width: 550px;
+  border-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-row {
+  height: 33.33%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-box {
+  height: 100%;
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-box-row2 {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: black;
+}
+
+#box2, #box5, #box8 {
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: black;
+}
+
+.container-HUD {
+  margin: 30px auto -10px auto;
+  padding: 0;
+  height: 100px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-HUD-segment-display {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  border-width: 3px;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+/* cuadrado background botones */
+.container-HUD-segment-button {
+  height: 100%;
+  width: 16.66%;
+  border-style: solid;
+  border: 1px solid white;
+  border-radius: 15%;
+  background: lightgrey;
+  font-size: 130%;
+  font-weight: lighter;
+  color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-HUD-segment-button:hover {
+  height: 130%;
+  width: 22%;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#HUD-segment2, #HUD-segment3 {
+  background: -webkit-gradient(linear, left top, right top, from(black), to(black));
+  background: linear-gradient(to right, black, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  font-weight: lighter;
+  color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.winanimation {
+  -webkit-animation: rainbow-move 1s linear 0s infinite;
+          animation: rainbow-move 1s linear 0s infinite;
+}
+
+#Reset {
+  height: 100%;
+  width: 20%;
+  border-radius: 10px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hide-button {
+  display: none;
+}
+
+body #alertIncorretTurn, body #alertWin {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  color: white;
+  height: 40px;
+  width: 315px;
+  font-size: 120%;
+  font-weight: lighter;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+body #alertIncorretTurn {
+  background: black;
+}
+
+body #alertWin {
+  background: #21c4e6;
+}
+/*# sourceMappingURL=style.css.map */

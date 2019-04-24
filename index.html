@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triqui Web</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <script src="src/drag_drop.js"></script>
+    <script src="src/index.js"></script> -->
+</head>
+
+<body>
+
+
+
+<div class="container container-main">
+
+    <div class="container container-row" id="row1">
+      <div class="container container-box container-box-row1" id="box1" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+      <div class="container container-box container-box-row1" id="box2" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+      <div class="container container-box container-box-row1" id="box3" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+    </div>
+    <div class="container container-row" id="row2">
+      <div class="container container-box container-box-row2" id="box4" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+      <div class="container container-box container-box-row2" id="box5" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+      <div class="container container-box container-box-row2" id="box6" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+    </div>
+    <div class="container container-row" id="row3">
+      <div class="container container-box container-box-row3" id="box7" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+      <div class="container container-box container-box-row3" id="box8" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+      <div class="container container-box container-box-row3" id="box9" ondragover="allowDrop(event)" ondrop = "generarMovimiento2(event)"></div>
+    </div>
+    
+  </div>
+  
+  
+  
+  <div class="container container-HUD" id="HUD">
+    <div id = "Reset" class="resetButton hide-button" style = "display: none;" onclick = "resetGame()"><h1 class = "winanimation">RESET<h1></div>
+    <div id = "X" draggable = "true" ondragstart = "generarMovimiento(event)"  class="container container-HUD-segment container-HUD-segment-button"><h1 id ="HUD-segment2" class="button">X</h1></div>
+    <div id = "O" draggable="true" ondragstart = "generarMovimiento(event)"  class="container container-HUD-segment container-HUD-segment-button"><h1 id ="HUD-segment3" class="button">O</h1></div>  
+  </div>
+  <div id="alertIncorretTurn">No es tu turno</div>
+  <div id="alertWin">Ganaste</div>
+
+  
+  
+</body>
+  
+<script  src="src/index.js"></script>
+
+
+
+</html>
